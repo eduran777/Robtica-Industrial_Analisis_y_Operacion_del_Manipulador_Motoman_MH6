@@ -1,4 +1,4 @@
-# Informe Laboratorio 1 Robótica Industrial - Trayectorias, Entradas y Salidas Digitales
+# Informe Laboratorio No. 02 - Robótica Industrial - Análisis y Operación del Manipulador Motoman MH6.
 
 <p align="center">
 <img src="Imagenes/logo_3.png" alt="UNAL" width="600"/>
