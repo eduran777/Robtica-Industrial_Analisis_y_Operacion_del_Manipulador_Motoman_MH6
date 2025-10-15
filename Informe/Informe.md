@@ -19,6 +19,20 @@ Ana María Orozco Reyes
 ## Sección de preguntas
 
 ### Comparar las especificaciones técnicas del Motoman MH6 y el IRB140 en un cuadro comparativo.
+| Característica             | Motoman MH6                          | ABB IRB 140                             |
+|----------------------------|--------------------------------------|-----------------------------------------|
+| Ejes                       | 6 :contentReference[oaicite:0]{index=0} | 6 :contentReference[oaicite:1]{index=1} |
+| Carga útil (payload)       | 6 kg :contentReference[oaicite:2]{index=2} | 6 kg :contentReference[oaicite:3]{index=3} |
+| Alcance horizontal (reach) | 1,422 mm :contentReference[oaicite:4]{index=4} | 810 mm (hasta el eje 5) :contentReference[oaicite:5]{index=5} |
+| Repetibilidad               | ±0.08 mm :contentReference[oaicite:6]{index=6} | ±0.03 mm :contentReference[oaicite:7]{index=7} |
+| Peso del robot              | 130 kg :contentReference[oaicite:8]{index=8} | 98 kg :contentReference[oaicite:9]{index=9} |
+| Velocidad de ejes (máx.)    | J1: 220 °/s · J2: 200 °/s · J3: 220 °/s · J4: 410 °/s · J5: 410 °/s · J6: 610 °/s :contentReference[oaicite:10]{index=10} | J1: 200 °/s · J2: 200 °/s · J3: 260 °/s · J4: 360 °/s · J5: 360 °/s · J6: 450 °/s :contentReference[oaicite:11]{index=11} |
+| Rango de movimiento de ejes | J1: ±170°; J2: +155° / –90°; J3: +250° / –175°; J4: ±180°; J5: +225° / –45°; J6: ±360° :contentReference[oaicite:12]{index=12} | J1: ±360°; J2: ±200°; J3: ±280°; J4: ±400°; J5: ±240°; J6: ±800° :contentReference[oaicite:13]{index=13} |
+| Montaje permitido            | Piso, invertido, en ángulo :contentReference[oaicite:14]{index=14} | Piso, invertido, pared (ángulo cualquier) :contentReference[oaicite:15]{index=15} |
+| Protección / ambiente        | Opción de IP67 en muñeca (para MH6) :contentReference[oaicite:16]{index=16} | IP67 estándar en brazos; versiones “Wash”, “Foundry” y “Clean Room” disponibles :contentReference[oaicite:17]{index=17} |
+| Aplicaciones típicas         | Soldadura, ensamblaje, dispensado, manejo de materiales :contentReference[oaicite:18]{index=18} | Soldadura, limpieza/aspersión, manejo, empaquetado, etc. :contentReference[oaicite:19]{index=19} |
+
+
 
 ### Describir las diferencias entre el home1 y el home2 del Motoman MH6.
 
