@@ -21,14 +21,93 @@ Ana María Orozco Reyes
 
 ### Describir las diferencias entre el home1 y el home2 del Motoman MH6.
 
-### Describir el procedimiento y cuáles teclas se usan para realizar el movimiento manual del manipulador Motoman por articulaciones, cambiar a movimientos cartesianos y realizar movimientos de traslación y rotación en los ejes X, Y, Z.
+## 1. Movimiento manual del manipulador Motoman
 
-### Detallar los niveles de velocidad del Motoman para movimientos manuales y su configuración, ¿Cómo se hace el cambio entre niveles de velocidad?, ¿Cómo se identifica en la pantalla el nivel de velocidad establecido?
+Para mover manualmente el **Motoman** se utiliza el **Teach Pendant (colgante de programación)**.  
+El procedimiento general es el siguiente:
 
-### Explicar las aplicaciones principales de RoboDK y cómo se comunica con el manipulador, ¿Qué hace RoboDK para mover el manipulador?
+1. **Encender el robot y el controlador.**  
+2. **Seleccionar el modo "Teach"** desde el interruptor de modo (clave o selector).  
+3. **Habilitar el "Servo Power"** presionando el botón “Servo ON READY”.  
+4. **Seleccionar el tipo de movimiento:**
+   - **Por articulaciones (Joint mode):** se presiona la tecla `COORD` hasta que en la pantalla aparezca `JOINT`.
+   - **Por coordenadas cartesianas (Base o Tool):** se presiona nuevamente `COORD` para alternar entre `BASE`, `TOOL`, `USER`, etc.
+5. **Mover los ejes o traslaciones:**
+   - En modo **Joint**, se usan las teclas de dirección para cada eje (`+J1`, `-J1`, ..., `+J6`, `-J6`).
+   - En modo **Cartesiano**, se usan:
+     - `+X / -X` para traslaciones en el eje X  
+     - `+Y / -Y` para traslaciones en el eje Y  
+     - `+Z / -Z` para traslaciones en el eje Z  
+     - `+Rx / -Rx`, `+Ry / -Ry`, `+Rz / -Rz` para rotaciones alrededor de esos ejes.
 
-### ¿Cómo se comunica RoboDK con el manipulador?
-### Analizar las diferencias entre RoboDK y RobotStudio y describir los usos específicos de cada herramienta, ¿Qué significa para usted cada una de esas herramientas?
+> 🔹 **Nota:** Es necesario mantener presionado el **Deadman Switch** (interruptor de seguridad) en la parte trasera del Teach Pendant para permitir el movimiento.
+
+---
+
+## 2. Niveles de velocidad del Motoman
+
+El **Motoman** dispone de varios **niveles de velocidad** para movimiento manual (jogging):
+
+- Normalmente se establecen niveles como **Low (10%)**, **Medium (50%)**, y **High (100%)**.  
+- El ajuste fino puede realizarse en incrementos mediante las teclas de **Speed Override (+/-)**.
+
+### Cambio de velocidad
+- Se realiza presionando las teclas:
+  - `SHIFT + SPEED +` → aumenta la velocidad.
+  - `SHIFT + SPEED -` → disminuye la velocidad.
+- También puede configurarse desde el menú del Teach Pendant en la opción **"Setup > Jog speed"**.
+
+### Identificación en pantalla
+- El nivel actual de velocidad se muestra en la parte superior de la pantalla LCD del colgante, generalmente en forma de **porcentaje (%)** del máximo permitido.  
+  Ejemplo: `SPEED: 50%`.
+
+---
+
+## 3. Aplicaciones principales de RoboDK
+
+**RoboDK** es un software de **simulación y programación offline** para robots industriales.  
+Sus principales aplicaciones son:
+
+- **Simulación de trayectorias y procesos** (soldadura, mecanizado, pintura, ensamblaje, pick & place).  
+- **Generación automática de programas** para diferentes marcas (Motoman, ABB, KUKA, FANUC, UR, etc.).  
+- **Validación de alcances, colisiones y tiempos de ciclo.**  
+- **Integración CAD-CAM**, permitiendo importar trayectorias desde software de diseño o mecanizado.
+
+### Comunicación con el manipulador
+RoboDK se comunica con el robot mediante el **driver del fabricante** (en este caso Yaskawa Motoman).  
+- Envía las **instrucciones de movimiento (puntos, trayectorias y velocidades)** en formato de programa del controlador (ej. lenguaje INFORM para Motoman).  
+- Estas instrucciones pueden transmitirse:
+  - **Offline:** exportando el programa y cargándolo en el controlador DX100/DX200.  
+  - **Online (modo de simulación en vivo):** mediante conexión Ethernet o puerto TCP/IP, enviando los comandos directamente al robot.
+
+---
+
+## 4. Comunicación entre RoboDK y el manipulador
+
+- Se establece una **conexión TCP/IP** entre RoboDK y el controlador del robot (por ejemplo, DX200).  
+- RoboDK actúa como un **cliente**, enviando los comandos de posición y lectura de estado al **servidor del controlador**.  
+- El protocolo puede variar según el fabricante, pero en Motoman generalmente se utiliza **MotoCOM o el driver Yaskawa RoboDK API**.  
+- Una vez conectado, los movimientos simulados en RoboDK se replican en tiempo real en el manipulador físico.
+
+---
+
+## 5. Diferencias entre RoboDK y RobotStudio
+
+| Característica | **RoboDK** | **RobotStudio (ABB)** |
+|----------------|-------------|------------------------|
+| Fabricante | Independiente (multimarca) | ABB |
+| Propósito | Simulación y programación offline de múltiples robots industriales | Simulación, programación y depuración específica de robots ABB |
+| Lenguaje de programación | Genera código en el lenguaje de cada fabricante (ej. INFORM, RAPID, KRL, TP, etc.) | Usa **RAPID**, lenguaje nativo de ABB |
+| Conexión con robot real | Mediante drivers genéricos o API de cada marca | Conexión directa con controladores ABB reales o virtuales (Virtual Controller) |
+| Interfaz | Más abierta y compatible con software CAD/CAM | Más integrada al ecosistema ABB |
+| Ideal para | Laboratorios, universidades, integración de robots mixtos | Empresas que usan exclusivamente robots ABB |
+
+### Interpretación personal
+- **RoboDK** representa una **plataforma versátil y universal**, útil para **aprender, integrar y comparar distintos robots** sin necesidad de hardware específico.  
+- **RobotStudio**, en cambio, es una **herramienta especializada**, que permite **programar con precisión un robot ABB** tal como se comportaría en el entorno real, ideal para **automatización industrial profesional**.
+
+---
+
 
 ---
 ## Cuadro comparativo de características técnicas del Motoman MH6 y el IRB140
