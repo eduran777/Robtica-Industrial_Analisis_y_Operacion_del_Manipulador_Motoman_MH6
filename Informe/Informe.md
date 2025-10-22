@@ -448,7 +448,7 @@ A continuación se presenta un análisis comparativo entre ambas plataformas.
 ---
 ## Diagrama de flujo de acciones del robot
 <p align="center">
-<img src="Imagenes/Diagrama flujo lab 2.png" alt="UNAL" width="600"/>
+<img src="Imagenes/Diagrama flujo lab 2.png" alt="UNAL" width="300"/>
 </p>
 
 ---
@@ -463,8 +463,6 @@ A continuación se presenta un análisis comparativo entre ambas plataformas.
 </p>
 
 ---
-## Código RoboDK 
 
----
 ## Video de simulación e implementación
 
