@@ -127,7 +127,7 @@ RoboDK se comunica con el robot mediante el **driver del fabricante** (en este c
 
 ---
 
-### Descripción de las configuraciones HOME1 y HOME2 del Motoman MH6, indicando la posición de cada articulación, ¿Cual posición es mejor?
+## Descripción de las configuraciones HOME1 y HOME2 del Motoman MH6, indicando la posición de cada articulación, ¿Cual posición es mejor?
 
 El robot **Motoman MH6**, controlado mediante el sistema **Yaskawa DX100**, cuenta con dos configuraciones principales de posición de referencia: **HOME1** y **HOME2**. Ambas posiciones están definidas en el controlador y pueden configurarse o ajustarse desde el **Teach Pendant**, sirviendo como puntos seguros para inicio, paro o transporte del manipulador.
 
