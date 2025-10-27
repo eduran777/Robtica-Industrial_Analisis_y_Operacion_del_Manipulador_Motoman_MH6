@@ -127,7 +127,7 @@ RoboDK se comunica con el robot mediante el **driver del fabricante** (en este c
 
 ---
 
-## Descripción de las configuraciones HOME1 y HOME2 del Motoman MH6, indicando la posición de cada articulación, ¿Cual posición es mejor?
+### Descripción de las configuraciones HOME1 y HOME2 del Motoman MH6, indicando la posición de cada articulación, ¿Cual posición es mejor?
 
 El robot **Motoman MH6**, controlado mediante el sistema **Yaskawa DX100**, cuenta con dos configuraciones principales de posición de referencia: **HOME1** y **HOME2**. Ambas posiciones están definidas en el controlador y pueden configurarse o ajustarse desde el **Teach Pendant**, sirviendo como puntos seguros para inicio, paro o transporte del manipulador.
 
@@ -297,7 +297,7 @@ Durante el movimiento manual, esta referencia se actualiza en tiempo real para i
 > Los niveles de velocidad en el modo manual del Motoman MH6 permiten controlar la rapidez y seguridad de los movimientos de enseñanza. Se ajustan desde el **Teach Pendant**, se visualizan en pantalla y garantizan una operación segura y precisa durante la programación o calibración del robot.
 
 ---
-##### Descripción de las principales funcionalidades de RoboDK
+## Descripción de las principales funcionalidades de RoboDK
 
 **RoboDK** es una plataforma de **simulación y programación offline** para robots industriales de múltiples marcas.  
 Permite crear, verificar y ejecutar programas robóticos sin necesidad de tener el robot físico encendido, facilitando el desarrollo, la enseñanza y la integración de celdas automatizadas.
