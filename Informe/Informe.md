@@ -21,7 +21,7 @@ Ana María Orozco Reyes
 
 ### Describir las diferencias entre el home1 y el home2 del Motoman MH6.
 
-## 1. Movimiento manual del manipulador Motoman
+### 1. Movimiento manual del manipulador Motoman
 
 Para mover manualmente el **Motoman** se utiliza el **Teach Pendant (colgante de programación)**.  
 El procedimiento general es el siguiente:
@@ -44,7 +44,7 @@ El procedimiento general es el siguiente:
 
 ---
 
-## 2. Niveles de velocidad del Motoman
+### 2. Niveles de velocidad del Motoman
 
 El **Motoman** dispone de varios **niveles de velocidad** para movimiento manual (jogging):
 
@@ -63,7 +63,7 @@ El **Motoman** dispone de varios **niveles de velocidad** para movimiento manual
 
 ---
 
-## 3. Aplicaciones principales de RoboDK
+### 3. Aplicaciones principales de RoboDK
 
 **RoboDK** es un software de **simulación y programación offline** para robots industriales.  
 Sus principales aplicaciones son:
@@ -82,7 +82,7 @@ RoboDK se comunica con el robot mediante el **driver del fabricante** (en este c
 
 ---
 
-## 4. Comunicación entre RoboDK y el manipulador
+### 4. Comunicación entre RoboDK y el manipulador
 
 - Se establece una **conexión TCP/IP** entre RoboDK y el controlador del robot (por ejemplo, DX200).  
 - RoboDK actúa como un **cliente**, enviando los comandos de posición y lectura de estado al **servidor del controlador**.  
@@ -91,7 +91,7 @@ RoboDK se comunica con el robot mediante el **driver del fabricante** (en este c
 
 ---
 
-## 5. Diferencias entre RoboDK y RobotStudio
+### 5. Diferencias entre RoboDK y RobotStudio
 
 | Característica | **RoboDK** | **RobotStudio (ABB)** |
 |----------------|-------------|------------------------|
@@ -107,7 +107,7 @@ RoboDK se comunica con el robot mediante el **driver del fabricante** (en este c
 - **RobotStudio**, en cambio, es una **herramienta especializada**, que permite **programar con precisión un robot ABB** tal como se comportaría en el entorno real, ideal para **automatización industrial profesional**.
 
 ---
-## Cuadro comparativo de características técnicas del Motoman MH6 y el IRB140
+### Cuadro comparativo de características técnicas del Motoman MH6 y el IRB140
 
 | Característica             | Motoman MH6                          | ABB IRB 140                             |
 |----------------------------|--------------------------------------|-----------------------------------------|
@@ -127,7 +127,7 @@ RoboDK se comunica con el robot mediante el **driver del fabricante** (en este c
 
 ---
 
-## Descripción de las configuraciones HOME1 y HOME2 del Motoman MH6
+### Descripción de las configuraciones HOME1 y HOME2 del Motoman MH6
 
 El robot **Motoman MH6**, controlado mediante el sistema **Yaskawa DX100**, cuenta con dos configuraciones principales de posición de referencia: **HOME1** y **HOME2**. Ambas posiciones están definidas en el controlador y pueden configurarse o ajustarse desde el **Teach Pendant**, sirviendo como puntos seguros para inicio, paro o transporte del manipulador.
 
@@ -166,7 +166,7 @@ Ambas configuraciones son esenciales para el trabajo seguro y eficiente del robo
 
 
 ---
-## Procedimiento detallado para realizar movimientos manuales en el Motoman MH6 (Controlador DX100)
+### Procedimiento detallado para realizar movimientos manuales en el Motoman MH6 (Controlador DX100)
 
 El movimiento manual del robot **Motoman MH6**, controlado mediante el sistema **Yaskawa DX100**, se realiza a través del **Teach Pendant**, siguiendo una secuencia de pasos segura que garantiza el control total de los ejes y la correcta selección del modo de operación.  
 A continuación se detalla el procedimiento completo:
@@ -244,7 +244,7 @@ La selección actual se muestra en la parte superior de la pantalla del colgante
 
 
 ---
-## Explicación sobre los niveles de velocidad para movimientos manuales
+### Explicación sobre los niveles de velocidad para movimientos manuales
 
 El controlador **Yaskawa DX100** del robot **Motoman MH6** permite ajustar la **velocidad de movimiento manual (jogging)** mediante distintos niveles y porcentajes, ofreciendo precisión y seguridad durante la manipulación del robot.
 
@@ -297,7 +297,7 @@ Durante el movimiento manual, esta referencia se actualiza en tiempo real para i
 > Los niveles de velocidad en el modo manual del Motoman MH6 permiten controlar la rapidez y seguridad de los movimientos de enseñanza. Se ajustan desde el **Teach Pendant**, se visualizan en pantalla y garantizan una operación segura y precisa durante la programación o calibración del robot.
 
 ---
-## Descripción de las principales funcionalidades de RoboDK
+##### Descripción de las principales funcionalidades de RoboDK
 
 **RoboDK** es una plataforma de **simulación y programación offline** para robots industriales de múltiples marcas.  
 Permite crear, verificar y ejecutar programas robóticos sin necesidad de tener el robot físico encendido, facilitando el desarrollo, la enseñanza y la integración de celdas automatizadas.
