@@ -465,4 +465,5 @@ A continuación se presenta un análisis comparativo entre ambas plataformas.
 ---
 
 ## Video de simulación e implementación
+https://drive.google.com/file/d/1pG5Jd7inoIBH1-W4YGltWOecrmIMRyJh/view?usp=sharing
 
