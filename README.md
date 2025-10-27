@@ -99,7 +99,7 @@ El contenido puede ser reutilizado con fines educativos, citando a los autores y
 
 Si deseas más información o referencias adicionales:
 
-- 📧 **Esteban Durán Jiménez** – [correo institucional o GitHub Profile]  
-- 📧 **Ana María Orozco Reyes** – [correo institucional o GitHub Profile]  
+- 📧 **Esteban Durán Jiménez** – [eduran@unal.edu.co]  
+- 📧 **Ana María Orozco Reyes** – [anorozco@unal.edu.co]  
 
 ---
