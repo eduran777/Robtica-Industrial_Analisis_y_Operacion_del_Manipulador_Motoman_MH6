@@ -1,8 +1,5 @@
 # 🤖 Informe Laboratorio No. 02 – Análisis y Operación del Manipulador Motoman MH6
 
-<p align="center">
-  <img src="Imagenes/logo_3.png" alt="UNAL" width="500"/>
-</p>
 
 ---
 
@@ -106,8 +103,3 @@ Si deseas más información o referencias adicionales:
 - 📧 **Ana María Orozco Reyes** – [correo institucional o GitHub Profile]  
 
 ---
-
-<p align="center">
-  <img src="Imagenes/logo_3.png" alt="UNAL" width="250"/><br/>
-  <sub>Universidad Nacional de Colombia – Facultad de Ingeniería | Robótica 2025-II</sub>
-</p>
