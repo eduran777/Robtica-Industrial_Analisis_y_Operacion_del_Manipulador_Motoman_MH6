@@ -157,10 +157,12 @@ El robot **Motoman MH6**, controlado mediante el sistema **Yaskawa DX100**, cuen
 
 ---
 
-### 🔧 Observación general
+### 🔧 ¿Cuál posición es mejor?
 Ambas configuraciones son esenciales para el trabajo seguro y eficiente del robot:
-- **HOME1** se utiliza para **referencia y calibración.**
-- **HOME2** se utiliza para **transporte y reposo prolongado.**
+- **HOME1** es la posición más adecuada para **referencia, calibración y programación.**
+Se recomienda utilizarla al iniciar o finalizar los ciclos de trabajo, ya que permite verificar la orientación de todos los ejes, confirmar límites articulares y asegurar una postura estable y libre de colisiones. Es la posición ideal cuando se requiere precisión en la repetitividad o cuando se van a ejecutar rutinas automáticas.
+- **HOME2** resulta más conveniente para **transporte, mantenimiento o reposo prolongado.**
+Su configuración compacta reduce el volumen ocupado por el manipulador, disminuye esfuerzos mecánicos sobre los servomotores y evita el desgaste innecesario de los frenos. Por ello, es la posición preferida cuando el robot está fuera de servicio o debe ser desplazado físicamente.
 
 > En la práctica industrial, se recomienda **verificar las posiciones HOME** antes de ejecutar cualquier programa, especialmente después de reiniciar el controlador o mover el robot manualmente.
 
