@@ -1,5 +1,6 @@
 # 🤖 Informe Laboratorio No. 02 – Análisis y Operación del Manipulador Motoman MH6
 
+![Simulación RobotStudio](Informe/Imagenes/gif1.gif) 
 
 ---
 
