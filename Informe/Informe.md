@@ -164,6 +164,8 @@ Se recomienda utilizarla al iniciar o finalizar los ciclos de trabajo, ya que pe
 - **HOME2** resulta más conveniente para **transporte, mantenimiento o reposo prolongado.**
 Su configuración compacta reduce el volumen ocupado por el manipulador, disminuye esfuerzos mecánicos sobre los servomotores y evita el desgaste innecesario de los frenos. Por ello, es la posición preferida cuando el robot está fuera de servicio o debe ser desplazado físicamente.
 
+- En conclusión, ninguna posición es “mejor" en términos absolutos y su conveniencia depende del objetivo operativo.
+
 > En la práctica industrial, se recomienda **verificar las posiciones HOME** antes de ejecutar cualquier programa, especialmente después de reiniciar el controlador o mover el robot manualmente.
 
 
