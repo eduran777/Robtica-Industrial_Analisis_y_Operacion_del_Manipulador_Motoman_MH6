@@ -16,7 +16,7 @@ Ana María Orozco Reyes
 
 ---
 
-## Sección de preguntas
+## Sección de preguntas:
 
 
 ### Describir las diferencias entre el home1 y el home2 del Motoman MH6.
